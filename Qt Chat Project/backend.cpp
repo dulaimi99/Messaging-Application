@@ -20,14 +20,6 @@ void BackEnd::set_username(const QString &new_username){
     my_username = new_username;
 }
 
-//return true is username taken, else false
-bool BackEnd::username_taken(QString username){
-
-    //check if list contains given username
-    return online_users_list.contains(username);
-
-}
-
 //return list of online users
 QVariantList BackEnd::online_users()
 {

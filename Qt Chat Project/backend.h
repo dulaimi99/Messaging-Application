@@ -26,7 +26,6 @@ class BackEnd : public QObject
         QVariantList broadcast_conversation();
 
         //QML BackEnd type invokable methods
-        Q_INVOKABLE bool username_taken(QString username);
         Q_INVOKABLE void add_user(QString username);
         Q_INVOKABLE void remove_user(QString username);
         Q_INVOKABLE void add_to_convo_list(QString username,QString sender, QString text_message);
